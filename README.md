@@ -40,6 +40,10 @@
 - `FROM image_name`: select base Image
 - `WORKDIR some_dir`: set working directory inside the container
 - `COPY host_location container_location`: copy file from host machine to container's working directory
+  - options:
+    - `--chown=some_user:some_group`: sets file ownership to the defined User & Group
+      - example: `COPY --chown=node:node` to set ownership to the predefined User & Group of the `node` Image 
 - `RUN some_command`: execute command during the Image build
 - `CMD some_command`: execute command when the container starts
 - `ENV some_env_variable`: sets an environment variable
+- `USER some_user`: run container as the non-root specified user
