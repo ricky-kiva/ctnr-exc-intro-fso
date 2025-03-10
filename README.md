@@ -16,7 +16,6 @@
 - `docker start image_name`: re-start Docker container without creating a new one
   - options:
     - `-i`: run in interactive mode
-- ``
 - `docker cp image_name:file_location target_location`: copy file from container to local machine
 - `docker ps`: list active containers
   - options:
