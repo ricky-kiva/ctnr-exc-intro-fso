@@ -61,4 +61,4 @@
   - `first_branch`: name of the service
     - `image`: declares which image to use
     - `build`: location of the Dockerfile if the declared image is not found online
-    - `ports`: declares ports to publish (branch-able)
+    - `ports`: declares list of ports to publish
