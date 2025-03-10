@@ -21,13 +21,18 @@
 - `docker ps`: list active containers
   - options:
     - `-a`: list all containers
-- `docker image ls`: list all local Docker images 
+- `docker image ls`: list all local Docker images
 - `docker commit image_name image_target_name`: create new Image from a modified image
 - `docker build dockerfile_location`: create new Image based on a Dockerfile
   - options:
     - `-t`: specify Image name
 - `docker kill container_id`: kill a container by id
-  - note: can use just the first 2 numbers of the id 
+  - note: can use just the first 2 numbers of the id
+- `docker compose up`: build & run container by Docker Compose
+  - options:
+    - `--build`: rebuild images
+    - `-d`: detached mode. run container in the background
+- `docker compose down`: close container initiated by Docker Compose
  
 ##### Image Name Format
 - `registry/organization/image:tag`
@@ -47,3 +52,13 @@
 - `CMD some_command`: execute command when the container starts
 - `ENV some_env_variable`: sets an environment variable
 - `USER some_user`: run container as the non-root specified user
+
+##### Docker Compose
+- Docker Compose: a tool to help define and run multi-container Docker applications using YAML files
+
+##### Docker Compose Commands
+- `services`: list of services
+  - `first_branch`: name of the service
+    - `image`: declares which image to use
+    - `build`: location of the Dockerfile if the declared image is not found online
+    - `ports`: declares ports to publish (branch-able)
