@@ -12,7 +12,9 @@
     - `-i`: run in interactive mode
     - `-t`: allocates TTY, to mimic real terminal
     - `-p`: inform Docker that a port from Host Machine should be opened & directed to a port in the container
-      - usage: `-p host-port:container-port`
+      - usage: `-p host_port:container_port`
+    - `-v`: binding file/directory in local machine to container
+      - usage: `-v host_file:container_file`
 - `docker start image_name`: re-start Docker container without creating a new one
   - options:
     - `-i`: run in interactive mode
@@ -31,7 +33,10 @@
   - options:
     - `--build`: rebuild images
     - `-d`: detached mode. run container in the background
+    - `-f`: specify Docker Compose file
 - `docker compose down`: close container initiated by Docker Compose
+  - options:
+    - `--volumes`: delete created volumes in the container
  
 ##### Image Name Format
 - `registry/organization/image:tag`
@@ -61,3 +66,4 @@
     - `image`: declares which image to use
     - `build`: location of the Dockerfile if the declared image is not found online
     - `ports`: declares list of ports to publish
+    - `volumes`: declares list of file/directory bindings in local machine to container
