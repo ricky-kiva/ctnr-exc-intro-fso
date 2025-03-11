@@ -67,3 +67,8 @@
     - `build`: location of the Dockerfile if the declared image is not found online
     - `ports`: declares list of ports to publish
     - `volumes`: declares list of file/directory bindings in local machine to container
+- `volumes`: list of Named Volumes (format example: `mongo_data:`, with `:`)
+
+###### Bind Mounts vs. Named Volume:
+- Bind Mounts: declaring location in filesystem (file / directory)
+- Named Volume: Let Docker decide where to store data (commonly in `/var/lib/docker/volumes/`) 
