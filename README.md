@@ -15,6 +15,7 @@
       - usage: `-p host_port:container_port`
     - `-v`: binding file/directory in local machine to container
       - usage: `-v host_file:container_file`
+    - - `-d`: detached mode. run container in the background
 - `docker start image_name`: re-start Docker container without creating a new one
   - options:
     - `-i`: run in interactive mode
@@ -37,6 +38,10 @@
 - `docker compose down`: close container initiated by Docker Compose
   - options:
     - `--volumes`: delete created volumes in the container
+- `docker exec image_name`: run command inside a container. Can be used when it's running
+  - options:
+    - `-i`: run in interactive mode
+    - `-t`: allocates TTY, to mimic real terminal
  
 ##### Image Name Format
 - `registry/organization/image:tag`
