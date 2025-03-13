@@ -15,7 +15,7 @@
       - usage: `-p host_port:container_port`
     - `-v`: binding file/directory in local machine to container
       - usage: `-v host_file:container_file`
-    - - `-d`: detached mode. run container in the background
+    - `-d`: detached mode. run container in the background
 - `docker start image_name`: re-start Docker container without creating a new one
   - options:
     - `-i`: run in interactive mode
