@@ -17,11 +17,6 @@ router.post('/', async (req, res) => {
   });
 
   const addedTodos = await redis.getAsync('added_todos');
-  
-  if (addedTodos === null) {
-    await redis.setAsync('added_todos', 0);
-    return res.send(todo);
-  }
 
   await redis.setAsync('added_todos', parseInt(addedTodos) + 1);
 
@@ -61,11 +56,6 @@ singleRouter.put('/', async (req, res) => {
   res.json(req.todo);
 });
 
-router.use('/:id', findByIdMiddleware, singleRouter)
-
-process.on('SIGINT', async () => {
-  await redisClient.disconnect();
-  process.exit(0);
-});
+router.use('/:id', findByIdMiddleware, singleRouter);
 
 module.exports = router;
