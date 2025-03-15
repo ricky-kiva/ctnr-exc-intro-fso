@@ -1,0 +1,482 @@
+Script started on 2025-03-15 13:49:47+07:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="151" LINES="19"]
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/script-answers[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/script-answers[00m$ docker [K[K[K[K[K[K[Kcd ../todo-app/todo-backend/
+[?2004l[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED              STATUS              PORTS                     NAMES
+c96727b541fe   mongo       "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+a275aaca8cc7   redis:6.0   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:6389->6379/tcp    todo-backend-redis-1
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker exec a27 [1@-[1@i[1@t[1@ [C[C[C[Credis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> d[17C[0K127.0.0.1:6379> do[18C[0K127.0.0.1:6379> doc[19C[0K127.0.0.1:6379> dock[20C[0K127.0.0.1:6379> docke[21C[0K127.0.0.1:6379> docker[22C[0K127.0.0.1:6379> docker [23C[0K127.0.0.1:6379> docker c[24C[0K127.0.0.1:6379> docker co[25C[0K127.0.0.1:6379> docker com[26C[0K127.0.0.1:6379> docker comp[27C[0K127.0.0.1:6379> docker compo[28C[0K127.0.0.1:6379> docker compos[29C[0K127.0.0.1:6379> docker compose[30C[0K127.0.0.1:6379> docker compose-[31C[0K127.0.0.1:6379> docker compose-f[32C[0K127.0.0.1:6379> docker compose-[31C[0K127.0.0.1:6379> docker compose[30C[0K127.0.0.1:6379> docker compos[29C[0K127.0.0.1:6379> docker compo[28C[0K127.0.0.1:6379> docker comp[27C[0K127.0.0.1:6379> docker com[26C[0K127.0.0.1:6379> docker co[25C[0K127.0.0.1:6379> docker c[24C[0K127.0.0.1:6379> docker [23C[0K127.0.0.1:6379> docker[22C[0K127.0.0.1:6379> docke[21C[0K127.0.0.1:6379> dock[20C[0K127.0.0.1:6379> doc[19C[0K127.0.0.1:6379> do[18C[0K127.0.0.1:6379> d[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m [0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m [0m[22C[0K127.0.0.1:6379> GET add[0;90;49m [0m[23C[0K127.0.0.1:6379> GET adde[0;90;49m [0m[24C[0K127.0.0.1:6379> GET added[0;90;49m [0m[25C[0K127.0.0.1:6379> GET added_[0;90;49m [0m[26C[0K127.0.0.1:6379> GET added_t[0;90;49m [0m[27C[0K127.0.0.1:6379> GET added_to[0;90;49m [0m[28C[0K127.0.0.1:6379> GET added_tod[0;90;49m [0m[29C[0K127.0.0.1:6379> GET added_todo[0;90;49m [0m[30C[0K127.0.0.1:6379> GET added_todos[0;90;49m [0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker exec -it a27 redis-clips[Kcd ../todo-app/todo-backend/exit[Kdocker compose -f docker-compose.dev.yml up -d[K -d[Kdown
+[?2004l[1A[1B[0G[?25l[+] Running 0/2
+ [33m⠋[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.1s [0m
+ [33m⠋[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠙[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.2s [0m
+ [33m⠙[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠹[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.3s [0m
+ [33m⠹[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠸[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.4s [0m
+ [33m⠸[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠼[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.5s [0m
+ [33m⠼[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠴[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.6s [0m
+ [33m⠴[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠦[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.7s [0m
+ [33m⠦[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠧[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.8s [0m
+ [33m⠧[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠇[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.9s [0m
+ [33m⠇[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠏[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m1.0s [0m
+ [33m⠏[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m1.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠋[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m1.1s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/3[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠋[0m Network todo-backend_default    Removing                                                                                                       [34m0.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠙[0m Network todo-backend_default    Removing                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠹[0m Network todo-backend_default    Removing                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠸[0m Network todo-backend_default    Removing                                                                                                       [34m0.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠼[0m Network todo-backend_default    Removing                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠴[0m Network todo-backend_default    Removing                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠦[0m Network todo-backend_default    Removing                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠧[0m Network todo-backend_default    Removing                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [33m⠇[0m Network todo-backend_default    Removing                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m1.1s [0m
+ [32m✔[0m Network todo-backend_default    [32mRemoved[0m                                                                                                        [34m0.8s [0m
+[?25h[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker compose -f docker-compose.dev.yml down[16Pexec -it a27 redis-clicompose -f docker-compose.dev.yml down[16Pexec -it a27 redis-clips[Kexec -it a27 redis-clicompose -f docker-compose.dev.yml down[Kdocker compose -f docker-compose.dev.yml down[K[K[K[Kup 0d
+[?2004lno such service: 0d
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker compose -f docker-compose.dev.yml up 0d[K[Ko[K-d
+[?2004l[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Network todo-backend_default  Creating                                                                                                         [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Network todo-backend_default  Creating                                                                                                         [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Network todo-backend_default  Creating                                                                                                         [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ [32m✔[0m Network todo-backend_default  [32mCreated[0m                                                                                                          [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/3[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠋[0m Container todo-backend-redis-1  Creating                                                                                                       [34m0.1s [0m
+ [33m⠋[0m Container todo-backend-mongo-1  Creating                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠙[0m Container todo-backend-redis-1  Creating                                                                                                       [34m0.2s [0m
+ [33m⠙[0m Container todo-backend-mongo-1  Creating                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mCreated[0m                                                                                                        [34m0.2s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCreated[0m                                                                                                        [34m0.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠹[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.4s [0m
+ [33m⠹[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠸[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.5s [0m
+ [33m⠸[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠼[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.6s [0m
+ [33m⠼[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠴[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.7s [0m
+ [33m⠴[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠦[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.8s [0m
+ [33m⠦[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                                                                        [34m0.8s [0m
+ [33m⠧[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                                                                        [34m0.8s [0m
+ [33m⠇[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m1.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                                                                        [34m0.8s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                                                                        [34m1.0s [0m
+[?25h[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker compose -f docker-compose.dev.yml up -d0d[1Pdown[16Pexec -it a27 redis-clips[Kexec -it a27 redis-cli
+[?2004lError response from daemon: No such container: a27
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker contain[K[K[K[K[K[K[K[K ps [K
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS          PORTS                     NAMES
+91e1ab0ba80e   mongo       "docker-entrypoint.s…"   17 seconds ago   Up 16 seconds   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+519baa9555fa   redis:6.0   "docker-entrypoint.s…"   17 seconds ago   Up 16 seconds   0.0.0.0:6389->6379/tcp    todo-backend-redis-1
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker psexec -it a27 redis-cli[K[K[K[K[K[K[K[K[K[K[K[K[K519 redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> d[17C[0K127.0.0.1:6379> do[18C[0K127.0.0.1:6379> doc[19C[0K127.0.0.1:6379> dock[20C[0K127.0.0.1:6379> docke[21C[0K127.0.0.1:6379> docker[22C[0K127.0.0.1:6379> docker [23C[0K127.0.0.1:6379> docker c[24C[0K127.0.0.1:6379> docker co[25C[0K127.0.0.1:6379> docker com[26C[0K127.0.0.1:6379> docker comp[27C[0K127.0.0.1:6379> docker compo[28C[0K127.0.0.1:6379> docker compos[29C[0K127.0.0.1:6379> docker compose[30C[0K127.0.0.1:6379> docker compose [31C[0K127.0.0.1:6379> docker compose -[32C[0K127.0.0.1:6379> docker compose -f[33C[0K127.0.0.1:6379> docker compose -f [34C[0K127.0.0.1:6379> docker compose -f d[35C[0K127.0.0.1:6379> docker compose -f do[36C[0K127.0.0.1:6379> docker compose -f dow[37C[0K127.0.0.1:6379> docker compose -f do[36C[0K127.0.0.1:6379> docker compose -f doc[37C[0K127.0.0.1:6379> docker compose -f dock[38C[0K127.0.0.1:6379> docker compose -f docke[39C[0K127.0.0.1:6379> docker compose -f docker[40C[0K127.0.0.1:6379> docker compose -f docke[39C[0K127.0.0.1:6379> docker compose -f dock[38C[0K127.0.0.1:6379> docker compose -f doc[37C[0K127.0.0.1:6379> docker compose -f do[36C[0K127.0.0.1:6379> docker compose -f d[35C[0K127.0.0.1:6379> docker compose -f [34C[0K127.0.0.1:6379> docker compose -f[33C[0K127.0.0.1:6379> docker compose -[32C[0K127.0.0.1:6379> docker compose [31C[0K127.0.0.1:6379> docker compose[30C[0K127.0.0.1:6379> docker compos[29C[0K127.0.0.1:6379> docker compo[28C[0K127.0.0.1:6379> docker comp[27C[0K127.0.0.1:6379> docker com[26C[0K127.0.0.1:6379> docker co[25C[0K127.0.0.1:6379> docker c[24C[0K127.0.0.1:6379> docker [23C[0K127.0.0.1:6379> docker[22C[0K127.0.0.1:6379> docke[21C[0K127.0.0.1:6379> dock[20C[0K127.0.0.1:6379> doc[19C[0K127.0.0.1:6379> do[18C[0K127.0.0.1:6379> d[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ nano docker-compose.dev.yml 
+[?2004l[?2004h[?1049h[22;0;0t[1;19r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[17;69H(B[0;7m[ Reading... ](B[m[17;68H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 7.2                                                     docker-compose.dev.yml                                                              [1;150H(B[m[18d(B[0;7m^G(B[m Help[18;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[18;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[18;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket[19d(B[0;7m^X(B[m Exit[19;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[19;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[19;113H(B[0;7mM-6(B[m Copy[19;129H(B[0;7m^Q(B[m Where Was[2d[92mservices[39m:[3;3H[92mmongo[39m:[4;5H[92mimage[39m: (B[mmongo[5;5H[92mports[39m:[6;6H(B[0;1m[33m[1K - [39m(B[m3456:27017[7;5H[92menvironment[39m:[8;7H[92mMONGO_INITDB_ROOT_USERNAME[39m: (B[mroot[9;7H[92mMONGO_INITDB_ROOT_PASSWORD[39m: (B[mexample[10;7H[92mMONGO_INITDB_DATABASE[39m: (B[mthe_database[11;5H[92mvolumes[39m:[12;6H(B[0;1m[33m[1K - [39m(B[m./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js[13;6H(B[0;1m[33m[1K - [39m(B[mmongo_data:/data/db[14;3H[92mredis[39m:[15;5H[92mimage[39m: (B[mredis:6.0[16;5H[92mports[39m:[2d(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h7[2;16r8
+[1;19r[16;6H(B[0;1m[33m[1K - [39m(B[m6389:6379[?25l[?12l[?25h7[2;16r8
+[1;19r[16;1H[?25l[?12l[?25h7[2;16r8
+[1;19r[16;1H[92mvolumes[39m:(B[m[?25l[?12l[?25h7[2;16r8
+[1;19r[16;3H[92mmongo_data[39m:(B[m[?25l[?12l[?25h7[2;16r8
+[1;19r[16;1H[?25l[17d[K[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h [?25l[?12l[?25h[12d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h6[?25l[?12l[?25h3[?25l[?12l[?25h8[?25l[?12l[?25h9[?25l[?12l[?25h:[?25l[?12l[?25h6[?25l[?12l[?25h3[?25l[?12l[?25h7[?25l[?12l[?25h9[?25l[1;91H(B[0;7m*[150G(B[m[13;17r[13;1HM[1;19r[13;1H[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h    v[?25l[?12l[?25ho[?25l[?12l[?25hl[?25l[?12l[?25hu[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25h[5G[92mvolume[39m:(B[m[?25l[?12l[?25h[41m [49m(B[m[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[92ms[39m:(B[m[?25l[?12l[?25h[C[?25l[15d[K[16d[92mvolumes[39m:(B[m[K[14d[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h(B[0;1m[33m[1K - [39m(B[mredis_data:/[?25l[?12l[?25hdata[?25l[?12l[?25h[15d[?25l[?12l[?25h[16;9H[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;3H[92mmongo_data[39m:(B[m[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;1H[?25l[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h  r[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h_[?25l[?12l[?25hd[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25h  [92mredis_data[39m:(B[m[?25l[?12l[?25h[A[?25l[?12l[?25h[14;9H[?25l[?12l[?25h[A[?25l[?12l[?25h[12;14H[?25l[?12l[?25h[A[?25l[?12l[?25h[A:[?25l[?12l[?25h[A[?25l[?12l[?25h[8;14H[?25l[?12l[?25h[7;9H[?25l[?12l[?25h[6;14H[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[C[?25l[?12l[?25h[A[?25l[?12l[?25h7[2;16r8M[1;19r[2;7H[92mMONGO_INITDB_ROOT_USERNAME[39m: (B[mroot[2;14H[?25l[?12l[?25h7[2;16r8M[1;19r[2;5H[92menvironment[39m:(B[m[?25l[?12l[?25h7[2;16r8M[1;19r[2;6H(B[0;1m[33m[1K - [39m(B[m3456:27017[14G[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8dn[?25l[?12l[?25h[9d[?25l[?12l[?25h[10;9H[?25l[?12l[?25h[11;14H[?25l[?12l[?25h[12;11H[?25l[?12l[?25h[13;14H[?25l[?12l[?25h6[?25l[?12l[?25h3[?25l[?12l[?25h7[?25l[?12l[?25h9[?25l7[14;17r8[14dM[1;19r[14;1H[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h    c[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25hm[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h[5G[92mcommand[39m:(B[m[?25l[?12l[?25h[41m [49m(B[m[?25l[?12l[?25h [33m[[39m(B[m'redis-[?25l[?12l[?25h[15G[95m'redis-server'[39m,(B[m[?25l[?12l[?25h[C'--appe[?25l[?12l[?25h[31G[95m'--appendonly'[39m,(B[m[?25l[?12l[?25h[C[95m'yes'[33m][39m(B[m[?25l[?12l[?25h[15;13H[?25l[?12l[?25h[16;25H[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;1H[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;1H[92mvolumes[39m:(B[m[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;3H[92mmongo_data[39m:(B[m[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;3H[92mredis_data[39m:(B[m[?25l[?12l[?25h7[2;17r8[17d
+[1;19r[16;1H[?25l[?12l[?25h[?25l[17d(B[0;7mSave modified buffer?                                                                                                                                  [18;1H Y(B[m Yes[K[19d(B[0;7m N(B[m No  [19;18H(B[0;7mC(B[m Cancel[K[17;23H[?12l[?25h[?25l[18d(B[0;7m^G(B[m Help[18;38H(B[0;7mM-D(B[m DOS Format[18;75H(B[0;7mM-A(B[m Append[18;112H(B[0;7mM-B(B[m Backup File[19d(B[0;7m^C(B[m Cancel[17G         [19;38H(B[0;7mM-M(B[m Mac Format[19;75H(B[0;7mM-P(B[m Prepend[19;112H(B[0;7m^T(B[m Browse[17d(B[0;7mFile Name to Write: docker-compose.dev.yml(B[m[?12l[?25h[?25l[17;68H[1K (B[0;7m[ Writing... ](B[m[K[1;91H(B[0;7m [150G(B[m[17;67H(B[0;7m[ Wrote 23 lines ](B[m[J[19d[?12l[?25h[19;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ cat docker-compose.dev.yml 
+[?2004lservices:
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    volumes:
+      - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - mongo_data:/data/db
+  redis:
+    image: redis:6.0
+    ports:
+      - 6389:6379
+    command: ['redis-server', '--appendonly', 'yes']
+    volumes:
+      - redis_data:/data
+
+volumes:
+  mongo_data:
+  redis_data:
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ cat docker-compose.dev.yml [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat docker-compose.dev.yml [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it 519 redis-clips[Kexec -it 519 redis-cli[1Pnano docker-compose.dev.yml [1Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker ps
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                     NAMES
+91e1ab0ba80e   mongo       "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+519baa9555fa   redis:6.0   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:6389->6379/tcp    todo-backend-redis-1
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker pscat docker-compose.dev.yml [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it 519 redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker exec -it 519 redis-clips[Kcat docker-compose.dev.yml [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it 519 redis-clips[Kexec -it a27 redis-clicompose -f docker-compose.dev.yml up -d0d-d - -build
+[?2004l[1A[1B[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠋[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠙[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠹[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠸[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠼[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠴[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠦[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠧[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠇[0m Container todo-backend-redis-1  Recreate                                                                                                       [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRecreated[0m                                                                                                      [34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠏[0m Container todo-backend-redis-1  Starting                                                                                                       [34m4.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠋[0m Container todo-backend-redis-1  Starting                                                                                                       [34m4.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠙[0m Container todo-backend-redis-1  Starting                                                                                                       [34m4.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠹[0m Container todo-backend-redis-1  Starting                                                                                                       [34m4.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [33m⠸[0m Container todo-backend-redis-1  Starting                                                                                                       [34m4.4s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                        [34m0.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                                                                        [34m4.4s [0m
+[?25h[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker compose f-[K[K-f docker-compose.dev.yml[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls[K[Kdocker ps
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS          PORTS                     NAMES
+02a05cf9dc0f   redis:6.0   "docker-entrypoint.s…"   20 seconds ago   Up 15 seconds   0.0.0.0:6389->6379/tcp    todo-backend-redis-1
+91e1ab0ba80e   mongo       "docker-entrypoint.s…"   3 minutes ago    Up 3 minutes    0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker pscompose -f docker-compose.dev.yml up -d --build[A]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ [C[C[C[C[C[C[C[19Pexec -it 519 redis-cli
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P redis-cli[1P redis-cli[1P redis-cli0 redis-cli2 redis-clia redis-cli[C[C[C[C[C[C[C[C[C[C
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m [0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m [0m[22C[0K127.0.0.1:6379> GET add[0;90;49m [0m[23C[0K127.0.0.1:6379> GET adde[0;90;49m [0m[24C[0K127.0.0.1:6379> GET added[0;90;49m [0m[25C[0K127.0.0.1:6379> GET added_[0;90;49m [0m[26C[0K127.0.0.1:6379> GET added_t[0;90;49m [0m[27C[0K127.0.0.1:6379> GET added_to[0;90;49m [0m[28C[0K127.0.0.1:6379> GET added_tod[0;90;49m [0m[29C[0K127.0.0.1:6379> GET added_todo[0;90;49m [0m[30C[0K127.0.0.1:6379> GET added_todos[0;90;49m [0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker exec -it 02a redis-cli[Kdocker exec -it 02a redis-clips[Kcompose -f docker-compose.dev.yml up -d --build[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[Kl down
+[?2004l[1A[1B[0G[?25l[+] Running 0/2
+ [33m⠋[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.1s [0m
+ [33m⠋[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠙[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.2s [0m
+ [33m⠙[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠹[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.3s [0m
+ [33m⠹[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠸[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.4s [0m
+ [33m⠸[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠼[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.5s [0m
+ [33m⠼[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠴[0m Container todo-backend-redis-1  Stopping                                                                                                       [34m0.6s [0m
+ [33m⠴[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [33m⠦[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [33m⠧[0m Container todo-backend-mongo-1  Stopping                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/3[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠋[0m Network todo-backend_default    Removing                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠙[0m Network todo-backend_default    Removing                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠹[0m Network todo-backend_default    Removing                                                                                                       [34m0.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠸[0m Network todo-backend_default    Removing                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠼[0m Network todo-backend_default    Removing                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠴[0m Network todo-backend_default    Removing                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠦[0m Network todo-backend_default    Removing                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠧[0m Network todo-backend_default    Removing                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [33m⠇[0m Network todo-backend_default    Removing                                                                                                       [34m0.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mRemoved[0m                                                                                                        [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mRemoved[0m                                                                                                        [34m0.8s [0m
+ [32m✔[0m Network todo-backend_default    [32mRemoved[0m                                                                                                        [34m1.0s [0m
+[?25h[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker com[K[K[K[K[K[K[K[K[K[Kdocker compose -f docker-compose.dev.yml down[16Pexec -it 02a redis-clips[Kcompose -f docker-compose.dev.yml up -d --build[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[?2004l[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Network todo-backend_default  Creating                                                                                                         [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Network todo-backend_default  Creating                                                                                                         [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Network todo-backend_default  Creating                                                                                                         [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/3[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠋[0m Container todo-backend-mongo-1  Creating                                                                                                       [34m0.0s [0m
+ [33m⠋[0m Container todo-backend-redis-1  Creating                                                                                                       [34m0.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠙[0m Container todo-backend-mongo-1  Creating                                                                                                       [34m0.1s [0m
+ [33m⠙[0m Container todo-backend-redis-1  Creating                                                                                                       [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠹[0m Container todo-backend-mongo-1  Creating                                                                                                       [34m0.2s [0m
+ [33m⠹[0m Container todo-backend-redis-1  Creating                                                                                                       [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠸[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.3s [0m
+ [33m⠸[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠼[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.4s [0m
+ [33m⠼[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠴[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.5s [0m
+ [33m⠴[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠦[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.6s [0m
+ [33m⠦[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠧[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.7s [0m
+ [33m⠧[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠇[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.8s [0m
+ [33m⠇[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠏[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m0.9s [0m
+ [33m⠏[0m Container todo-backend-redis-1  Starting                                                                                                       [34m0.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [33m⠋[0m Container todo-backend-mongo-1  Starting                                                                                                       [34m1.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                                                                        [34m0.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m Network todo-backend_default    [32mCreated[0m                                                                                                        [34m0.3s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                                                                        [34m1.0s [0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                                                                        [34m0.9s [0m
+[?25h[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker compose[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdco[K[Kocker compose[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker compose -f[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker ps
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS          PORTS                     NAMES
+bc231f8ffcd2   mongo       "docker-entrypoint.s…"   24 seconds ago   Up 23 seconds   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+032d9dac6fb5   redis:6.0   "docker-entrypoint.s…"   24 seconds ago   Up 23 seconds   0.0.0.0:6389->6379/tcp    todo-backend-redis-1
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ docker compo[K[K[K[K[Kexec -it 032 redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET A[0;90;49m [0m[21C[0K127.0.0.1:6379> GET Ad[0;90;49m [0m[22C[0K127.0.0.1:6379> GET Add[0;90;49m [0m[23C[0K127.0.0.1:6379> GET Ad[0;90;49m [0m[22C[0K127.0.0.1:6379> GET A[0;90;49m [0m[21C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m [0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m [0m[22C[0K127.0.0.1:6379> GET add[0;90;49m [0m[23C[0K127.0.0.1:6379> GET adde[0;90;49m [0m[24C[0K127.0.0.1:6379> GET added[0;90;49m [0m[25C[0K127.0.0.1:6379> GET added_[0;90;49m [0m[26C[0K127.0.0.1:6379> GET added_t[0;90;49m [0m[27C[0K127.0.0.1:6379> GET added_to[0;90;49m [0m[28C[0K127.0.0.1:6379> GET added_tod[0;90;49m [0m[29C[0K127.0.0.1:6379> GET added_todo[0;90;49m [0m[30C[0K127.0.0.1:6379> GET added_todos[0;90;49m [0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004h]0;voyager@DESKTOP-370N1DA: /mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[01;32mvoyager@DESKTOP-370N1DA[00m:[01;34m/mnt/d/Learning/General Software Dev/ctnr-exc-intro-fso/todo-app/todo-backend[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-15 13:56:47+07:00 [COMMAND_EXIT_CODE="0"]
