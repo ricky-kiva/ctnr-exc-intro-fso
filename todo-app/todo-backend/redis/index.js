@@ -17,14 +17,6 @@ if (!REDIS_URL) {
     
   getAsync = promisify(client.get).bind(client);
   setAsync = promisify(client.set).bind(client);
-  
-  client.on('connect', async () => {
-    const addedTodos = await getAsync('added_todos');
-  
-    if (addedTodos === null) {
-      await setAsync('added_todos', 0);
-    }
-  });
 }
 
 module.exports = {
