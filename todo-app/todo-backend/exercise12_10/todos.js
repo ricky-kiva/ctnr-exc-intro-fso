@@ -17,6 +17,11 @@ router.post('/', async (req, res) => {
   });
 
   const addedTodos = await redis.getAsync('added_todos');
+  
+  if (addedTodos === null  || isNaN(parseInt(addedTodos))) {
+    await redis.setAsync('added_todos', 0);
+    return res.send(todo);
+  }
 
   await redis.setAsync('added_todos', parseInt(addedTodos) + 1);
 
