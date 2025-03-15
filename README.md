@@ -78,5 +78,5 @@
 - Bind Mounts: declaring location in filesystem (file / directory)
 - Named Volume: Let Docker decide where to store data (commonly in `/var/lib/docker/volumes/`)
 
-###### Helpful Console Command
+##### Helpful Console Command
 - `netstat -ano | findstr :some_port` (powershell): check if port is used in the host machine
