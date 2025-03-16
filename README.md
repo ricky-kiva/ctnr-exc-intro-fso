@@ -51,16 +51,18 @@
 - Dockerfile: a text file that contains all of the instructions to create an Image
 
 ##### Dockerfile Commands
-- `FROM image_name`: select base Image
+- `FROM image_name`: select base image
+  - `AS build_stage_name`: set stage name of this build process
 - `WORKDIR some_dir`: set working directory inside the container
 - `COPY host_location container_location`: copy file from host machine to container's working directory
   - options:
     - `--chown=some_user:some_group`: sets file ownership to the defined User & Group
-      - example: `COPY --chown=node:node` to set ownership to the predefined User & Group of the `node` Image 
+      - example: `COPY --chown=node:node` to set ownership to the predefined User & Group of the `node` Image
+    - `--from=build_stage_name`: set where the build stage location of the file to copy
 - `RUN some_command`: execute command during the Image build
 - `CMD some_command`: execute command when the container starts
 - `ENV some_env_variable`: sets an environment variable
-- `USER some_user`: run container as the non-root specified user
+- `USER some_user`: run container as the specified user
 
 ##### Docker Compose
 - Docker Compose: a tool to help define and run multi-container Docker applications using YAML files
