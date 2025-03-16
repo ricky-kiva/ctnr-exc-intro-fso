@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20 AS build-stage
 
 WORKDIR /usr/src/app
 
@@ -7,12 +7,12 @@ COPY . .
 USER root
 RUN chown -R node:node .
 
-RUN npm install -g serve
-
 USER node
 
 RUN npm ci
 
 RUN npm run build
 
-CMD ["serve", "dist"]
+FROM nginx:1.25-alpine
+
+COPY --from=build-stage /usr/src/app/dist /usr/share/nginx/html
