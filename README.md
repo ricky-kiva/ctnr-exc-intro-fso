@@ -28,6 +28,7 @@
 - `docker build dockerfile_location`: create new Image based on a Dockerfile
   - options:
     - `-t`: specify Image name
+    - `-f`: specify Dockerfile name
 - `docker kill container_id`: kill a container by id
   - note: can use just the first 2 numbers of the id
 - `docker compose up`: build & run container by Docker Compose
