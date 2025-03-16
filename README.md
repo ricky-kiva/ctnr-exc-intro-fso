@@ -51,7 +51,7 @@
 ##### Dockerfile
 - Dockerfile: a text file that contains all of the instructions to create an Image
 
-##### Dockerfile Commands
+##### Dockerfile Syntax
 - `FROM image_name`: select base image
   - `AS build_stage_name`: set stage name of this build process
 - `WORKDIR some_dir`: set working directory inside the container
@@ -68,11 +68,13 @@
 ##### Docker Compose
 - Docker Compose: a tool to help define and run multi-container Docker applications using YAML files
 
-##### Docker Compose Commands
+##### Docker Compose Syntax
 - `services`: list of services
   - `first_branch`: name of the service
     - `image`: declares which image to use
     - `build`: location of the Dockerfile if the declared image is not found online
+      - `dockerfile`: specify the name of the dockerfile
+      - `context`: specify the directory to send to the build proces (useful if the Dockerfile is elsewhere)
     - `ports`: declares list of ports to publish
     - `volumes`: declares list of file/directory bindings in local machine to container
 - `volumes`: list of Named Volumes (format example: `mongo_data:`, with `:`)
