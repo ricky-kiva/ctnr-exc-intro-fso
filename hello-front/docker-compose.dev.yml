@@ -7,7 +7,9 @@ services:
     volumes:
       - ./:/usr/src/app
     ports:
-      - 5173:5173
+      - 3210:5173
     environment:
       - CHOKIDAR_USEPOLLING=1
     container_name: hello-front-dev
+  debug-helper:
+    image: busybox
