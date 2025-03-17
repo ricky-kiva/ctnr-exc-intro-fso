@@ -1,4 +1,19 @@
 services:
+  api:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/app
+    depends_on:
+      - mongo
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
+
   mongo:
     image: mongo
     ports:
@@ -10,6 +25,7 @@ services:
     volumes:
       - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
       - mongo_data:/data/db
+
   redis:
     image: redis:6.0
     ports:
