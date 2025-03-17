@@ -6,10 +6,10 @@ services:
     volumes:
       - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
     depends_on:
-      - frontend
-      - backend
+      - app
+      - server
 
-  frontend:
+  app:
     build:
       context: ./todo-frontend
       dockerfile: dev.Dockerfile
@@ -21,7 +21,7 @@ services:
     expose:
       - 5173
 
-  backend:
+  server:
     build:
       context: ./todo-backend
       dockerfile: dev.Dockerfile
