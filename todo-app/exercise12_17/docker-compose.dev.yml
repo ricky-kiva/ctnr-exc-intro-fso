@@ -1,0 +1,21 @@
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: ./todo-frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./todo-frontend:/usr/src/app
+    environment:
+      - CHOKIDAR_USEPOLLING=1
+      - VITE_BACKEND_URL=http://localhost:8080/api
+    expose:
+      - 5173
