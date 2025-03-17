@@ -77,6 +77,7 @@
       - `context`: specify the directory to send to the build proces (useful if the Dockerfile is elsewhere)
     - `ports`: declares list of ports to publish
     - `volumes`: declares list of file/directory bindings in local machine to container
+    - `depends_on`: list of other service that this service depends on
 - `volumes`: list of Named Volumes (format example: `mongo_data:`, with `:`)
 
 ###### Bind Mounts vs. Named Volume:
