@@ -19,13 +19,9 @@ router.get('/', async (req, res) => {
 router.get('/statistics', async (req, res) => {
   let addedTodos = await redis.getAsync('added_todos');
 
-  console.log(`added_todos 1: ${addedTodos}`);
-
   if (addedTodos === null || isNaN(parseInt(addedTodos))) {
     await redis.setAsync('added_todos', 0);
     addedTodos = await redis.getAsync('added_todos');
-
-    console.log(`added_todos 2: ${addedTodos}`);
 
     return res.send({ added_todos: parseInt(addedTodos) });
   }
