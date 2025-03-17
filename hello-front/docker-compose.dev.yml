@@ -11,5 +11,16 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=1
     container_name: hello-front-dev
+
+  nginx:
+    image: nginx:1.20.1
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    container_name: reverse-proxy
+    depends_on:
+      - app
+
   debug-helper:
     image: busybox
