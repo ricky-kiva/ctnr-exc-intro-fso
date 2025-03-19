@@ -14,5 +14,3 @@ services:
       dockerfile: dev.Dockerfile
     volumes:
       - ./backend:/usr/src/app
-    expose:
-      - 3000
